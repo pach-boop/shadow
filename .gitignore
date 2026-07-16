@@ -1,0 +1,24 @@
+# Dependencies / build
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.vite/
+.turbo/
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor / OS noise
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# Re-include token-named source files: the maintainer's global gitignore
+# has a `*token*` pattern that would silently exclude files like
+# `tokens.ts` or `token-meter.ts` (this bit us once in a sibling project).
+!*token*
+!**/*token*
