@@ -1,5 +1,7 @@
 # Shadow
 
+[![ci](https://github.com/pach-boop/shadow/actions/workflows/ci.yml/badge.svg)](https://github.com/pach-boop/shadow/actions/workflows/ci.yml)
+
 **Una IA completamente privada que te sigue como tu sombra — y no le responde a nadie más.**
 
 Shadow es un compañero de IA open source y local-first. Hay exactamente **un chat**, y carga el **100% de tu contexto**: todo lo que le has contado, destilado en una memoria de largo plazo que nunca sale de tus manos. Como tu sombra: va a donde tú vas, conoce toda tu historia, y no le pertenece a nadie más que a ti — el modelo corre en tu dispositivo, cada palabra se cifra en reposo, y nada se guarda para nadie que no tenga la llave.
