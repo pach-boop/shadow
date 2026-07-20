@@ -40,7 +40,7 @@ Supporting choices: embeddings via transformers.js (local, in a worker); AES-GCM
 
 - (+) $0 hosting; the demo is a URL; one language across core and UI; every core module testable without a browser.
 - (+) The adapter seam keeps model and backend choices reversible as local-model quality improves.
-- (−) In-browser model quality is capped (≈3-4B params, quantized). Mitigation: the router + redaction design lets hard queries delegate safely (to be recorded in ADR-002).
+- (−) In-browser model quality is capped (≈3-4B params, quantized). Mitigation: the router + redaction design lets hard queries delegate safely (see [ADR-002](./002-privacy-router.md)).
 - (−) WebGPU availability varies, notably on Linux. Mitigation: feature-detect at onboarding, recommend the Ollama adapter when WebGPU is absent.
 - (−) IndexedDB can be evicted under storage pressure. Mitigation: request persistent storage, and provide encrypted export/backup from M2.
 - (−) Argon2id ships as WASM (extra ~100KB, supply-chain surface). Mitigation: pin and vendor the implementation; PBKDF2-SHA256 (600k+ iterations) as documented fallback.
