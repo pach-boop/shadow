@@ -1,4 +1,10 @@
 {
+  // WebWorker (not DOM) gives core the web-platform APIs it uses — fetch,
+  // streams, encoding, and later WebCrypto/IndexedDB — while keeping
+  // document/window out, enforcing the ADR-001 "no UI/DOM" boundary in types.
   "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "WebWorker"]
+  },
   "include": ["src"]
 }
